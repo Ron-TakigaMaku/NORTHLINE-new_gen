@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Anton&display=swap');
-
 @import 'variables';
 @import 'hero';
 @import 'manifesto';
@@ -16,7 +14,7 @@
 }
 
 html {
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: var(--font-body);
 	scroll-behavior: smooth;
 }
 
@@ -62,46 +60,42 @@ ul {
 .btn {
 	display: inline-block;
 	padding: 14px 36px;
-	color: var(--color-text-primary);
-	font-size: var(--text-xs);
+	color: #fff;
+	font-size: 12px;
 	font-weight: 700;
-	letter-spacing: var(--tracking-wide);
+	letter-spacing: 1.5px;
 	text-decoration: none;
-	border: 1px solid var(--color-border);
+	border: none;
 	border-radius: 2px;
+	animation: fadeDown 0.6s ease both;
 	transition:
 		background 0.25s,
 		transform 0.15s;
 	cursor: pointer;
-
-	&:hover {
-		color: var(--color-white);
-		background: var(--color-accent);
-		border-color: var(--color-accent);
-		transform: translateY(-1px);
-	}
 }
-
+.btn:hover {
+	background: var(--red);
+	transform: translateY(-1px);
+}
 .btn-dark {
 	display: inline-block;
 	padding: 16px 44px;
-	color: var(--color-white);
-	font-size: var(--text-xs);
+	color: #fff;
+	font-size: 12px;
 	font-weight: 700;
-	letter-spacing: var(--tracking-wide);
+	letter-spacing: 1.5px;
 	text-decoration: none;
-	background: var(--color-accent);
+	background: var(--primary);
 	border: none;
 	border-radius: 2px;
 	transition:
 		background 0.25s,
 		transform 0.15s;
 	cursor: pointer;
-
-	&:hover {
-		background: var(--color-accent-dark);
-		transform: translateY(-1px);
-	}
+}
+.btn-dark:hover {
+	background: var(--red);
+	transform: translateY(-1px);
 }
 
 .container {
@@ -132,9 +126,9 @@ ul {
 
 	&__logo {
 		color: var(--color-text-overlay);
-		font-size: var(--text-base);
+		font-size: var(--text-lg);
 		font-weight: 700;
-		letter-spacing: var(--tracking-widest);
+		letter-spacing: var(---tracking-tight);
 		text-transform: uppercase;
 	}
 
