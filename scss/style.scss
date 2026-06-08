@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Anton&display=swap');
+
+@import 'variables';
+@import 'hero';
+@import 'manifesto';
+@import 'gallery';
+@import 'find-us';
+@import 'collection';
+
 *,
 *::before,
 *::after {
@@ -7,13 +16,225 @@
 }
 
 html {
+	font-family: 'Space Grotesk', sans-serif;
 	scroll-behavior: smooth;
 }
 
 body {
 	overflow-x: hidden;
-	color: var(--main-black);
-	font-family: '--font-body', sans-serif;
-	background-color: var(--main-white);
+	background-color: var(--color-bg);
 	background-image: none;
+}
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+@keyframes fadeDown {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.reveal {
+	transition:
+		opacity 0.8s ease,
+		transform 0.8s ease;
+	transform: translateY(40px);
+	opacity: 0;
+
+	&.in {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 14px 36px;
+	color: var(--color-text-primary);
+	font-size: var(--text-xs);
+	font-weight: 700;
+	letter-spacing: var(--tracking-wide);
+	text-decoration: none;
+	border: 1px solid var(--color-border);
+	border-radius: 2px;
+	transition:
+		background 0.25s,
+		transform 0.15s;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--color-white);
+		background: var(--color-accent);
+		border-color: var(--color-accent);
+		transform: translateY(-1px);
+	}
+}
+
+.btn-dark {
+	display: inline-block;
+	padding: 16px 44px;
+	color: var(--color-white);
+	font-size: var(--text-xs);
+	font-weight: 700;
+	letter-spacing: var(--tracking-wide);
+	text-decoration: none;
+	background: var(--color-accent);
+	border: none;
+	border-radius: 2px;
+	transition:
+		background 0.25s,
+		transform 0.15s;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--color-accent-dark);
+		transform: translateY(-1px);
+	}
+}
+
+.container {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 40px 0 0 0;
+	background: transparent;
+	animation: fadeDown 0.6s ease both;
+
+	&__container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__logo {
+		color: var(--color-text-overlay);
+		font-size: var(--text-base);
+		font-weight: 700;
+		letter-spacing: var(--tracking-widest);
+		text-transform: uppercase;
+	}
+
+	&__list {
+		display: flex;
+		gap: 34px;
+	}
+
+	&__link {
+		position: relative;
+		color: var(--color-text-overlay);
+		font-size: var(--text-sm);
+		letter-spacing: var(--tracking-wide);
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&::after {
+			bottom: -5px;
+			left: 0;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: var(--color-accent);
+			transition: transform 0.3s ease;
+			content: '';
+			transform: scaleX(0);
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.hero {
+	overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	color: var(--main-white);
+
+	&__img {
+		position: absolute;
+		z-index: 0;
+		height: 100%;
+		width: 100%;
+		filter: brightness(0.5);
+		inset: 0;
+
+		img {
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		z-index: 1;
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.55) 0%,
+			rgba(0, 0, 0, 0.25) 60%,
+			rgba(0, 0, 0, 0.1) 100%
+		);
+		content: '';
+		inset: 0;
+	}
+
+	&__content {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		min-height: 100vh;
+		width: 100%;
+		padding: 80px 16px 60px;
+		text-align: center;
+		flex-direction: column;
+	}
+
+	&__title {
+		max-width: 1000px;
+		margin: 0 0 24px 0;
+		color: var(--color-white);
+		font-size: 50px;
+		font-weight: 500;
+		line-height: 1.2;
+		animation: fadeDown 0.7s 0.2s ease both;
+	}
+
+	&__text {
+		max-width: 800px;
+		color: var(--color-white);
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 1.4;
+		animation: fadeDown 0.7s 0.4s ease both;
+	}
 }
