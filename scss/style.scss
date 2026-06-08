@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	color: var(--main-black);
+	font-family: '--font-body', sans-serif;
+	background-color: var(--main-white);
+	background-image: none;
+}

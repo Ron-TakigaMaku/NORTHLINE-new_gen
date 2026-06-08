@@ -1,0 +1,47 @@
+:root {
+	/* === БАЗА === */
+	--color-bg: #eeeef0; /* холодный серо-белый, как снег в тени */
+	--color-surface: #e2e3e6; /* поверхности, секции */
+	--color-border: #c8cad0; /* линии */
+
+	/* === ТЕКСТ === */
+	--color-text-primary: #161719; /* почти чёрный с холодным оттенком */
+	--color-text-secondary: #5a5c63; /* подписи */
+	--color-text-muted: #9a9ca4; /* мелкий текст */
+
+	/* === АКЦЕНТ — пыльный арктический синий === */
+	--color-accent: #4a6172; /* сланец, горное озеро */
+	--color-accent-dark: #334552; /* hover */
+	--color-accent-light: #b8c4cc; /* фоны с намёком */
+
+	/* === ТЕХНИЧЕСКИЙ АКЦЕНТ === */
+	--color-signal: #c8501a; /* терракота/сигнальный — как маркировка на снаряжении */
+
+	/* === ВСПОМОГАТЕЛЬНЫЕ === */
+	--color-white: #f8f8fa;
+	--color-black: #0d0e10;
+
+	/* === ШРИФТЫ === */
+	--font-display:
+		'Bebas Neue', sans-serif; /* заголовки, hero, названия секций */
+	--font-body: 'IBM Plex Sans Condensed', sans-serif; /* весь основной текст */
+
+	/* === РАЗМЕРЫ === */
+	--text-xs: 0.75rem; /* 12px — мелкие подписи */
+	--text-sm: 0.875rem; /* 14px — secondary текст */
+	--text-base: 1rem; /* 16px — основной текст */
+	--text-lg: 1.25rem; /* 20px — крупный body */
+	--text-xl: 2rem; /* 32px — подзаголовки */
+	--text-2xl: 3.5rem; /* 56px — заголовки секций */
+	--text-hero: clamp(5rem, 12vw, 10rem); /* hero — адаптивный */
+
+	/* === ТРЕКИНГ  === */
+	--tracking-tight: -0.02em; /* для крупных display заголовков */
+	--tracking-normal: 0;
+	--tracking-wide: 0.08em; /* для мелких капс-подписей */
+	--tracking-widest: 0.2em; /* для лейблов типа "COLLECTION 01" */
+
+	/* === ВЫСОТА СТРОКИ === */
+	--leading-tight: 0.95; /* для hero — Bebas Neue очень плотно */
+	--leading-normal: 1.4; /* для body текста */
+}
