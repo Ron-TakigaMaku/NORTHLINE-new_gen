@@ -1,12 +1,9 @@
 export function createGalleryCard(item) {
 	return `
-    <section class="gallery__content">
-      <div class="gallery__img">
-        <img src="${item.img}" alt="${item.title}" />
-      </div>
-      <section class="gallery-actions">
-        <a href="#story" class="btn">Discover Our Story ↓</a>
-      </section>
-    </section>
+    <li class="gallery__item">
+      <button class="gallery__btn" data-id="${item.id}">
+        <img src="${item.img}" alt="NORTHLINE editorial" />
+      </button>
+    </li>
   `
 }

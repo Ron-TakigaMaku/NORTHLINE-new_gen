@@ -42,10 +42,18 @@
 			<div class="manifest__list"></div>
 		</section>
 
-		<section id="manifest" class="gallery">
-			<div class="gallery__list"></div>
+		<section class="gallery" id="gallery">
+			<ul class="gallery__list"></ul>
 		</section>
 
 		<script type="module" src="./js/page/main.js"></script>
+
+		<div class="modal--open" id="gallery-modal">
+			<div class="gallery-modal__overlay"></div>
+			<div class="gallery-modal__window">
+				<button class="gallery-modal__close">✕</button>
+				<div class="gallery-modal__body"></div>
+			</div>
+		</div>
 	</body>
 </html>
