@@ -1,4 +1,5 @@
 import { renderHero } from '../modules/hero/render-hero.js'
+import { renderManifest } from '../modules/hero/render-manifest.js'
 
 function initRevealAnimation() {
 	const observer = new IntersectionObserver(
@@ -21,5 +22,6 @@ function initRevealAnimation() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	renderHero()
+	renderManifest()
 	initRevealAnimation()
 })
