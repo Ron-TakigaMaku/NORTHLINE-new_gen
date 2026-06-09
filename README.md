@@ -20,6 +20,25 @@ The site is structured as five full-screen sections that scroll vertically:
 | **Collection** | Horizontal carousel — product as object            |
 | **Find Us**    | Store address, map, hours, contact                 |
 
+┌─────────────────────────────────────┐
+│ │
+│ NORTHLINE │ ← Hero, full screen
+│ "brand tagline" │
+│ │
+├─────────────────────────────────────┤
+│ "We make clothing for │
+│ those who live outside" │ ← Manifesto
+│ [photo]│
+├─────────────────────────────────────┤
+│ [photo] [photo] [large photo] │
+│ [large photo] [photo] │ ← Gallery
+├─────────────────────────────────────┤
+│ ← [item] [item] [item] → │ ← Carousel
+├─────────────────────────────────────┤
+│ 📍 Address 🕐 Hours │ ← Find Us
+│ [map] │
+└─────────────────────────────────────┘
+
 ---
 
 ## Tech Stack
