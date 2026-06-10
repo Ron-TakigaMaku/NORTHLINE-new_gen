@@ -20,13 +20,13 @@
 					<nav class="header__nav">
 						<ul class="header__list">
 							<li class="header__item">
-								<a href="#" class="header__link">Gallery</a>
+								<a id="" class="header__link">Gallery</a>
 							</li>
 							<li class="header__item">
-								<a href="#" class="header__link">Collection</a>
+								<a id="" class="header__link">Collection</a>
 							</li>
 							<li class="header__item">
-								<a href="#" class="header__link">Find Us</a>
+								<a id="" class="header__link">Find Us</a>
 							</li>
 						</ul>
 					</nav>
@@ -46,6 +46,32 @@
 			<ul class="gallery__list"></ul>
 		</section>
 
+		<section id="#" class="about">
+			<section class="container">
+				<section class="about__wrapper">
+					<div class="about__track" id="track"></div>
+				</section>
+				<section class="about__nav">
+					<section class="about__dots" id="dots"></section>
+					<div class="about__counter"></div>
+					<section class="about__btns">
+						<button class="about__prev" aria-label="Назад">←</button>
+						<button class="about__next" aria-label="Вперёд">→</button>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<!-- MODAL -->
+		<div class="modal" id="product-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__window">
+				<button class="modal__close">✕</button>
+				<div class="modal__body"></div>
+			</div>
+		</div>
+
+		<!-- SCRIPT -->
 		<script type="module" src="./js/page/main.js"></script>
 	</body>
 </html>

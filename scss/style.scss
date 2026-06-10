@@ -20,7 +20,7 @@ html {
 
 body {
 	overflow-x: hidden;
-	background-color: var(--color-bg);
+	background-color: var(--color-all-white);
 	background-image: none;
 }
 input,
@@ -60,7 +60,7 @@ ul {
 .btn {
 	display: inline-block;
 	padding: 14px 36px;
-	color: #fff;
+	color: var(--color-all-white);
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1.5px;
@@ -80,7 +80,7 @@ ul {
 .btn-dark {
 	display: inline-block;
 	padding: 16px 44px;
-	color: #fff;
+	color: var(--color-all-white);
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1.5px;
