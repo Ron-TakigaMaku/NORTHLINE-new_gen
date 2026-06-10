@@ -7,7 +7,7 @@ export function createGalleryCard(item) {
        <div id="gallery-modal">
         <div class="gallery-modal__overlay"></div>
         <div class="gallery-modal__window">
-          <button class="gallery-modal__close">✕</button>
+          <button href="#manifest" class="gallery-modal__close">✕</button>
           <div class="gallery-modal__body"></div>
         </div>
     </div>

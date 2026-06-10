@@ -5,9 +5,6 @@ export function createHeroCard(item) {
         <img src="${item.img}" alt="${item.title}" />
       </div>
       <h1 class="hero__title">${item.title}</h1>
-      <section class="hero-actions">
-        <a href="#story" class="btn">Discover Our Story ↓</a>
-      </section>
     </section>
   `
 }
