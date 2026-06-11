@@ -35,21 +35,55 @@ The site is structured as five full-screen sections that scroll vertically:
 
 ```
 northline/
-├── index.html
+├── assets/
+│   └── images/
+│       ├── gallery/
+│       ├── hero/
+│       ├── manifest/
+│       └── track/
 ├── css/
-│   └── style.css
+│   ├── modal-fixes.css
+│   ├── style.css
+│   └── style.min.css
+├── js/
+│   ├── components/
+│   │   ├── about-cards.js
+│   │   ├── findUs-cards.js
+│   │   ├── gallery-cards.js
+│   │   ├── hero-cards.js
+│   │   └── manifest-cards.js
+│   ├── data/
+│   │   ├── about-data.js
+│   │   ├── findUs-data.js
+│   │   ├── gallery-data.js
+│   │   ├── hero-data.js
+│   │   └── manifest-data.js
+│   ├── modules/
+│   │   ├── about/
+│   │   │   ├── init-slider.js
+│   │   │   ├── product-modal.js
+│   │   │   └── render-about.js
+│   │   ├── findUs/
+│   │   │   └── render-findUs.js
+│   │   ├── gallery/
+│   │   │   ├── gallery-modal.js
+│   │   │   └── render-gallery.js
+│   │   ├── hero/
+│   │   │   └── render-hero.js
+│   │   └── manifest/
+│   │       └── render-manifest.js
+│   └── page/
+│       └── main.js
 ├── scss/
-│   ├── style.scss
-│   ├── _variables.scss
+│   ├── _collection.scss
+│   ├── _find-us.scss
+│   ├── _gallery.scss
 │   ├── _hero.scss
 │   ├── _manifesto.scss
-│   ├── _gallery.scss
-│   ├── _collection.scss
-│   └── _find-us.scss
-├── js/
-│   └── main.js
-└── assets/
-    └── images/
+│   ├── _variables.scss
+│   └── style.scss
+├── index.html
+└── README.md
 ```
 
 ---
