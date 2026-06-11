@@ -1,6 +1,7 @@
 import { initSlider } from '../modules/about/init-slider.js'
 import { initProductModal } from '../modules/about/product-modal.js'
 import { renderAbout } from '../modules/about/render-about.js'
+import { renderFindUs } from '../modules/findUs/render-findUs.js'
 import { initGalleryModal } from '../modules/gallery/gallery-modal.js'
 import { renderGallery } from '../modules/gallery/render-gallery.js'
 import { renderHero } from '../modules/hero/render-hero.js'
@@ -23,6 +24,7 @@ function initRevealAnimation() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	renderHero()
+	renderFindUs()
 	renderAbout()
 	renderManifest()
 	renderGallery()
